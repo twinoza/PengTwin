@@ -1,0 +1,92 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# Program specific files #
+##########################
+.ICEauthority
+.Xauthority*
+.adobe/*
+.bash_history
+.bash_logout
+.cache/
+.cgdb/
+.compiz-1/
+.config/
+.dbus/
+.dmrc
+.filezilla/
+.fontconfig/
+.freerdp/
+.gconf/
+.gitk
+.gnome2/
+.goutputstream*
+.gstreamer-*
+.gtk-bookmarks
+.hplip/
+.icedtea/
+.java/
+.lesshst
+.local/
+.macromedia/*
+.matplotlib/
+.mission-control/
+.mozilla/*
+.nv/
+.nvidia-settings-rc*
+.nx/
+.pulse-cookie
+.pulse/
+.qt/
+.remmina/
+.secpanel/
+.ssh/
+.tgdb/
+.thumbnails/
+.viminfo
+.xsession-errors*
+Desktop/
+Downloads/
+bin/env2
+data/
+examples.desktop
+work/
+
+# Temp Files #
+##############
+*.swp
+*.tmp
+*.temp
+*.foo
+*.bar
+*.lock
+
+# Other files #
+###############
+*debuglog.txt*
+
