@@ -28,11 +28,6 @@ if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
-## set a fancy prompt (non-color, unless we know we "want" color)
-#case "$TERM" in
-#    xterm-color) color_prompt=yes;;
-#esac
-
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
@@ -122,28 +117,18 @@ export GIT_PS1_SHOWDIRTYSTATE
 export GIT_PS1_SHOWSTASHSTATE
 PS1='\[${BOLD}${GREEN}\]\u@\h\[$RESET\]:\[${BLUE}\]\w\[${BOLD}${YELLOW}\]$(__git_ps1) \[$RESET\]\$ '
 
-## If this is an xterm set the title to user@host:dir
-#case "$TERM" in
-#xterm*|rxvt*)
-#    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
-#    ;;
-#*)
-#    ;;
-#esac
-
 # Set the directories up to be colored
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 fi
 
+# Print basic info about this machine
+uname -a
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
-uname -a
-
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
