@@ -167,11 +167,11 @@ if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
-# Use tmux for the terminal by default
-#alias tmux='tmux -2'
-#[[ -z "$TMUX" ]] && exec tmux
-if [[ ! $TERM =~ screen ]]; then
-	exec tmux
-fi
+## Use tmux for the terminal by default
+##alias tmux='tmux -2'
+##[[ -z "$TMUX" ]] && exec tmux
+#if [[ ! $TERM =~ screen ]]; then
+#	exec tmux
+#fi
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/noza/neuro-boa/lib
