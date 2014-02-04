@@ -54,6 +54,7 @@
 .lesshst
 .local/
 .macromedia/*
+.Mathematica/
 .matplotlib/
 .mission-control/
 .mozilla/*
