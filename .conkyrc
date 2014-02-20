@@ -334,10 +334,12 @@ ${alignr}${color grey}${swapbar 5,200}
 
 ${alignc}${color darkred}FILE SYSTEM
 ${color darkred}$hr
-${color slate grey}ROOT:    ${color }${fs_free /}/${fs_size /}
-${alignr}${color grey}${fs_bar 5,200 /}
-${color slate grey}HOME:    ${color }${fs_free /home}/${fs_size /home}
-${alignr}${color grey}${fs_bar 5,200 /home}
+#${color slate grey}ROOT:    ${color }${fs_free /}/${fs_size /}
+${color slate grey}ROOT:${alignr}${color grey}${fs_bar 5,200 /}
+${alignr}${color }${fs_free /}/${fs_size /}
+#${color slate grey}HOME:    ${color }${fs_free /home}/${fs_size /home}
+${color slate grey}HOME:${alignr}${color grey}${fs_bar 5,200 /home}
+${alignr}${color }${fs_free /home}/${fs_size /home}
 
 ${alignc}${color darkred}NETWORK
 ${color darkred}$hr
