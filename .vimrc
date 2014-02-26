@@ -82,6 +82,16 @@ nmap <silent> <A-Right> :wincmd l<CR>
 map :spv :vsplit
 map :sph :split
 
+nnoremap <silent> <Leader>df :call DiffToggle()<CR>
+
+function! DiffToggle()
+	if &diff
+		diffoff
+	else
+		diffthis
+	endif
+:endfunction
+
 if !exists("autocommands_loaded")
   let autocommands_loaded = 1
   autocmd BufRead,BufNewFile,FileReadPost *.py source ~/.vim/python
