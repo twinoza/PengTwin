@@ -54,6 +54,7 @@ let Tlist_File_Fold_Auto_Close = 1
 map <F8> :TlistToggle<CR>
 
 " Set quit to 'q' instead of ':q' and set save to 'v' instead of ':w'
+nnoremap Q q
 map q :q
 map v :w
 
