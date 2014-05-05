@@ -42,6 +42,7 @@
 .config/
 .dbus/
 .dmrc
+.dropbox/
 .emacs
 .esd_auth
 .filezilla/
@@ -79,6 +80,7 @@
 .printer-groups.xml
 .pulse-cookie
 .pulse/
+.putty/
 .qt/
 .recently-used.xbel
 .remmina/
@@ -95,6 +97,7 @@
 .vnc/
 .ws_state
 .x2go/
+.x2goclient/
 .xsession-errors*
 bin/env2
 CADProjects/
