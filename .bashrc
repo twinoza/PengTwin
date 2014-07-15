@@ -120,7 +120,9 @@ GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWSTASHSTATE=1
 export GIT_PS1_SHOWDIRTYSTATE
 export GIT_PS1_SHOWSTASHSTATE
-PS1='\[${BOLD}${GREEN}\]\u@\h\[$RESET\]:\[${BLUE}\]\w\[${BOLD}${YELLOW}\]$(__git_ps1) \[$RESET\]\$ '
+#PS1='\[${BOLD}${GREEN}\]\u@\h\[$RESET\]:\[${BLUE}\]\w\[${BOLD}${YELLOW}\]$(__git_ps1) \[$RESET\]\$ '
+#The following line is disabled because I can't figure out how to get tmux to start in the current working directory
+PS1='$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I") $PWD)\[${BOLD}${GREEN}\]\u@\h\[$RESET\]:\[${BLUE}\]\w\[${BOLD}${YELLOW}\]$(__git_ps1) \[$RESET\]\$ '
 
 # Set the directories up to be colored
 if [ -x /usr/bin/dircolors ]; then
@@ -148,9 +150,10 @@ fi
 # Use tmux for the terminal by default
 #alias tmux='tmux -2'
 #[[ -z "$TMUX" ]] && exec tmux
-if [[ ! $TERM =~ screen ]]; then
-	exec tmux
-fi
+#The following lines are disabled because I can't figure out how to get tmux to start in the current working directory
+#if [[ ! $TERM =~ screen ]]; then
+#	exec tmux
+#fi
 
 umask 0002
 
