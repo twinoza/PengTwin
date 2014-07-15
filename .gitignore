@@ -43,6 +43,8 @@
 .dbus/
 .dmrc
 .dropbox/
+.dropbox-dist/
+.dropbox-master/
 .emacs
 .esd_auth
 .filezilla/
