@@ -157,4 +157,4 @@ fi
 
 umask 0002
 
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/noza/neuro-boa/lib
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/noza/work/neuro-boa/lib
