@@ -157,4 +157,7 @@ fi
 
 umask 0002
 
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/noza/work/neuro-boa/lib
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/noza/work/neuro-boa/lib:/home/noza/Downloads/Software/gmock-1.6.0/gtest/lib/.libs:/home/noza/Downloads/Software/gmock-1.6.0/lib/.libs
+export GTEST_DIR=/home/noza/Downloads/Software/gmock-1.6.0/gtest
+export GMOCK_DIR=/home/noza/Downloads/Software/gmock-1.6.0/
+
