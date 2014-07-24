@@ -20,7 +20,6 @@ alias l='ls -CF'
 alias la='ls -CFAs'
 alias ll='ls -l'
 alias m='more'
-alias make='colormake'
 alias new='source ~/.bash_aliases'
 alias po='popd'
 alias pu='pushd'
@@ -38,4 +37,6 @@ if [ $(hostname) == 'ng-hippocampus' ]; then
     alias cscopeon='module load synopsys/cosmoscope_F-2011.09'
     alias hspiceoff='module unload synopsys/hspice_H-2013.03-SP1; module unload synopsys/license'
     alias hspiceon='module load synopsys/hspice_H-2013.03-SP1'
+else
+    alias make='colormake'
 fi
