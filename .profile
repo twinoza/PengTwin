@@ -9,19 +9,23 @@
 #umask 022
 
 # if running bash
+# Get the aliases and functions
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
     if [ -f "$HOME/.bashrc" ]; then
-	. "$HOME/.bashrc"
+			  #echo "Running .bashrc from .profile"
+        . "$HOME/.bashrc"
     fi
 fi
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
+    #echo "BLAH"
     PATH="$HOME/bin:.:$PATH"
 fi
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "/usr/NX/bin" ] ; then
+    #echo "DI DAH"
     PATH="/usr/NX/bin:$PATH"
 fi
