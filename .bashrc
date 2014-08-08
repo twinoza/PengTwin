@@ -147,6 +147,10 @@ if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
+if [ ${hostname}=='ng-hippocampus' ]; then
+    PATH="$HOME/bin:.:$PATH"
+fi
+
 # Use tmux for the terminal by default
 #alias tmux='tmux -2'
 #[[ -z "$TMUX" ]] && exec tmux
