@@ -6,7 +6,7 @@
 " Julian Edwards 2008-05-30
 
 " Wrapping and tabs.
-set tw=0 tabstop=4 softtabstop=4 shiftwidth=4 sta noexpandtab ai
+set tw=0 tabstop=4 softtabstop=4 shiftwidth=4 sta expandtab ai
 set wrapmargin=0
 set wrap
 set linebreak
