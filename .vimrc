@@ -107,8 +107,8 @@ if !exists("autocommands_loaded")
 endif
 
 " Allow folding to be done automatically based on indent level
-set foldmethod=indent
-set nofoldenable
+"set foldmethod=indent
+"set nofoldenable
 
 " map <Leader>b :MiniBufExplorer<cr>
 " map <Leader>c :CMiniBufExplorer<cr>
