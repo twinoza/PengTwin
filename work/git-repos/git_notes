@@ -6,4 +6,10 @@ To set gnome-terminal to the right colors then type:
 To clone solarized:
 	git clone git://github.com/altercation/solarized.git
 
+To clone vim-colors-solarized:
+  Clone the `vim-colors-solarized` directory so that it is
+  a subdirectory of the `.vim/bundle` directory.
+
+    $ cd ~/.vim/bundle
+    $ git clone git://github.com/altercation/vim-colors-solarized.git
 
