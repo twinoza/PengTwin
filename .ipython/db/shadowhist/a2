@@ -1,0 +1,8 @@
+(dp1
+Vdefault_run("/home/noza/neuro-boa/apps/spring/calibration/lksoma_erev/endeavour/chip4/syn2/synapse_endeavour_chip4_syn2_erev_lksoma_27_6_1421.bif")
+p2
+I11
+sVexecfile('soma_f_vs_i.py')
+p3
+I66
+s.
