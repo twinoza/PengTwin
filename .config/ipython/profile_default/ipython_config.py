@@ -7,10 +7,10 @@ c = get_config()
 #------------------------------------------------------------------------------
 
 # A Mixin for applications that start InteractiveShell instances.
-# 
+#
 # Provides configurables for loading extensions and executing files as part of
 # configuring a Shell environment.
-# 
+#
 # Provides init_extensions() and init_code() methods, to be called after
 # init_shell(), which must be implemented by subclasses.
 
@@ -18,10 +18,17 @@ c = get_config()
 # c.InteractiveShellApp.code_to_run = ''
 
 # lines of code to run at IPython startup.
-# c.InteractiveShellApp.exec_lines = []
+c.InteractiveShellApp.exec_lines = [
+        'from pylab import *',
+        'import os',
+        'import sys',
+        'import time',
+        'import datetime as dt',
+        'import re'
+]
 
 # If true, an 'import *' is done from numpy and pylab, when using pylab
-# c.InteractiveShellApp.pylab_import_all = True
+c.InteractiveShellApp.pylab_import_all = True
 
 # A list of dotted module names of IPython extensions to load.
 # c.InteractiveShellApp.extensions = []
@@ -52,7 +59,14 @@ c = get_config()
 # c.TerminalIPythonApp.log_level = 30
 
 # lines of code to run at IPython startup.
-# c.TerminalIPythonApp.exec_lines = []
+ c.TerminalIPythonApp.exec_lines = [
+        'from pylab import *',
+        'import os',
+        'import sys',
+        'import time',
+        'import datetime as dt',
+        'import re'
+]
 
 # Enable GUI event loop integration ('qt', 'wx', 'gtk', 'glut', 'pyglet').
 # c.TerminalIPythonApp.gui = None
