@@ -19,7 +19,6 @@ c = get_config()
 
 # lines of code to run at IPython startup.
 c.InteractiveShellApp.exec_lines = [
-        'from pylab import *',
         'import os',
         'import sys',
         'import time',
@@ -59,8 +58,7 @@ c.InteractiveShellApp.pylab_import_all = True
 # c.TerminalIPythonApp.log_level = 30
 
 # lines of code to run at IPython startup.
- c.TerminalIPythonApp.exec_lines = [
-        'from pylab import *',
+c.TerminalIPythonApp.exec_lines = [
         'import os',
         'import sys',
         'import time',
