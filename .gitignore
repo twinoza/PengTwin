@@ -40,6 +40,7 @@
 .cgdb/
 .compiz-1/
 .config/
+!.config/ipython/
 .dbus/
 .dmrc
 .dropbox/
