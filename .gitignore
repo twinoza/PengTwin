@@ -39,6 +39,7 @@
 .cdsinit
 .cgdb/
 .compiz-1/
+.config/
 .dbus/
 .dmrc
 .dropbox/
