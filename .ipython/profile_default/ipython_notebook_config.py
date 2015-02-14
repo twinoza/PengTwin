@@ -402,4 +402,4 @@ c = get_config()
 # c.NotebookManager.save_script = False
 
 # The directory to use for notebooks.
-# c.NotebookManager.notebook_dir = '/home/noza'
+ c.NotebookManager.notebook_dir = '/home/noza/work/sandbox/PyNotebooks'
