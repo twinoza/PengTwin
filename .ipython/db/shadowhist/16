@@ -1,8 +1,0 @@
-(dp1
-Vrun ./calibration/f_vs_erev_parser.py
-p2
-I42
-sVdefault_run("/home/noza/neuro-boa/apps/spring/calibration/lksoma_gset/endeavour/chip4/syn3/synapse_endeavour_chip4_syn3_g_lksoma_28_6_1128.bif")
-p3
-I22
-s.

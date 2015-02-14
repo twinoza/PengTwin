@@ -1,8 +1,0 @@
-(dp1
-Vexecfile('plotSomaFreq.py')
-p2
-I67
-sVdefault_run("/home/noza/neuro-boa/apps/spring/calibration/lksoma_erev/endeavour/chip9/syn0/synapse_endeavour_chip9_syn0_erev_lksoma_29_6_1143.bif")
-p3
-I32
-s.

@@ -1,8 +1,0 @@
-(dp1
-Vexecfile('./calibration/calib_syn_f_vs_g_sleak.py')
-p2
-I13
-sVbp = plt.boxplot(data)
-p3
-I79
-s.
