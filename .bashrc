@@ -165,3 +165,6 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/noza/work/neuro-boa/lib:/home/noza
 export GTEST_DIR=/home/noza/Downloads/Software/gmock-1.6.0/gtest
 export GMOCK_DIR=/home/noza/Downloads/Software/gmock-1.6.0/
 
+
+# added by Anaconda 2.1.0 installer
+export PATH="/home/noza/anaconda/bin:$PATH"
