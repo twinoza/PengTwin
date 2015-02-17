@@ -107,9 +107,3 @@ var show_hide_input = CellToolbar.utils.checkbox_ui_generator('Show/Hide Input',
 );
 CellToolbar.register_callback('show_hide_input.chkb', show_hide_input);
 CellToolbar.register_preset('Show/Hide Input', ['show_hide_input.chkb']);
-
-
-@module IPython
-@namespace IPython
-@class customjs
-@static
