@@ -87,6 +87,19 @@ nmap <silent> <A-Right> :wincmd l<CR>
 map :spv :vsplit
 map :sph :split
 
+" Tab Controls (moving between and creating tabs)
+set showtabline=2
+nnoremap tt :tabedit<Space>
+nnoremap tc :tabclose<CR>
+nnoremap tm :tabm<Space>
+nnoremap th :tabfirst<CR>
+nnoremap tj :tabnext<CR>
+nnoremap tk :tabprev<CR>
+nnoremap tl :tablast<CR>
+nnoremap tn :tabnext<Space>
+nnoremap tp :tabprev<Space>
+
+
 " Allows me to toggle the diff functionality by typing the "leader" character,
 " which is set to "\" by default, and then "df" 
 nnoremap <silent> <Leader>df :call DiffToggle()<CR>
