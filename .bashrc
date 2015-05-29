@@ -165,3 +165,5 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/noza/work/neuro-boa/lib:/home/noza
 export GTEST_DIR=/home/noza/Downloads/Software/gmock-1.6.0/gtest
 export GMOCK_DIR=/home/noza/Downloads/Software/gmock-1.6.0/
 
+# set ulimit for corefile size to unlimited by default
+ulimit -c unlimited
