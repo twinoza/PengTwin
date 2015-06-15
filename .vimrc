@@ -9,6 +9,7 @@ set softtabstop=2  " Sets the number of space characters used for a tab keypress
 set nu              " Sets the line number to be displayed
 set hlsearch        " Turns on the highlighting of search results
 set t_Co=256         " Sets the number of colors to be used for the terminal in VIM
+"set showmatch     " Turns on the temporary highlighting and jump to the matching brace
 
 syntax on
 
@@ -37,6 +38,14 @@ filetype plugin indent on
 au FileType py set autoindent
 au FileType py set smartindent
 "au FileType py set textwidth=79 " PEP-8 Friendly
+
+" Autocomplete matching pairs
+inoremap ( ()<Esc>i
+inoremap [ []<Esc>i
+inoremap { {}<Esc>i
+inoremap < <><Esc>i
+inoremap " ""<Esc>i
+inoremap ' ''<Esc>i
 
 " NERD_tree config
 let NERDTreeChDirMode=2
