@@ -151,6 +151,10 @@ if [ ${hostname}=='ng-hippocampus' ]; then
     PATH="$HOME/bin:.:$PATH"
 fi
 
+if [ ${hostname}=='roulette' ]; then
+    PATH="/opt/anaconda/bin:.:$PATH"
+fi
+
 # Use tmux for the terminal by default
 #alias tmux='tmux -2'
 #[[ -z "$TMUX" ]] && exec tmux
