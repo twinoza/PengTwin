@@ -89,7 +89,7 @@ c = get_config()
 # c.NotebookApp.base_url = '/'
 
 # The directory to use for notebooks and kernels.
-c.NotebookApp.notebook_dir = u'/home/noza/work/sandbox/PyNotebooks'
+c.NotebookApp.notebook_dir = u'/home/noza/work/sandbox/TwinPyNB'
 
 #
 # c.NotebookApp.file_to_run = ''
