@@ -1,17 +1,19 @@
-To clone gnome-terminal-colors-solarized:
+In order to get solarized working properly in the terminal and vim, you need to run the following commands:
+
+--- Cloning gnome-terminal-colors-solarized ---
+First you need to clone gnome-terminal-colors-solarized:
 	git clone git://github.com/sigurdga/gnome-terminal-colors-solarized.git
-To set gnome-terminal to the right colors then type:
-  cd gnome-terminal-colors-solarized
-  install.sh
-	## OBSOLETE ## ./solarize  ##
+Once you have cloned this directory, you need to set the gnome-terminal to the right colors. You do this by typing:
+    $ cd gnome-terminal-colors-solarized
+    $ install.sh
+	  $ ./solarize  ## OBSOLETE ##
 
-To clone solarized:
-	git clone git://github.com/altercation/solarized.git
+--- Cloning solarized ---
+You can/should also clone the full solarized package, just in case you want to set other script.  It is best to do this while you are still in the /work/git-repos directory (here).  To do this, run the following command:
+    $ git clone git://github.com/altercation/solarized.git
 
-To clone vim-colors-solarized:
-  Clone the `vim-colors-solarized` directory so that it is
-  a subdirectory of the `.vim/bundle` directory.
-
+--- Cloning vim-colors-solarized ---
+Now, in order to have vim be colorized properly, you need to clone vim-colors-solarized.  To use pathogen (recommended) you must clone the `vim-colors-solarized` directory so that it is a subdirectory of the `.vim/bundle` directory.  As such, typing the following two commands will achieve this easily and automatically.
     $ cd ~/.vim/bundle
     $ git clone git://github.com/altercation/vim-colors-solarized.git
 
