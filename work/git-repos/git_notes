@@ -1,3 +1,5 @@
+Solarized Git Repos
+=========================================================================================================================
 In order to get solarized working properly in the terminal and vim, you need to run the following commands:
 
 --- Cloning gnome-terminal-colors-solarized ---
@@ -16,4 +18,12 @@ You can/should also clone the full solarized package, just in case you want to s
 Now, in order to have vim be colorized properly, you need to clone vim-colors-solarized.  To use pathogen (recommended) you must clone the `vim-colors-solarized` directory so that it is a subdirectory of the `.vim/bundle` directory.  As such, typing the following two commands will achieve this easily and automatically.
     $ cd ~/.vim/bundle
     $ git clone git://github.com/altercation/vim-colors-solarized.git
+
+IPython/Jupyter Git Repos
+=========================================================================================================================
+The easiest way to get the notebook extensions for ipython/jupyter is to clone the git repository and then run "python setup.py install".
+    $ git clone git@github.com:ipython-contrib/IPython-notebook-extensions.git
+    $ python setup.py install
+
+This will create all the right files in the all the right places.  It should be noted that this will also write over any special configuration files that you have in ~/.jupyter/.  As such, I have added the main files to the repository as well.
 
