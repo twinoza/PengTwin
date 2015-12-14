@@ -171,3 +171,7 @@ export GMOCK_DIR=/home/noza/Downloads/Software/gmock-1.6.0/
 
 # set ulimit for corefile size to unlimited by default
 ulimit -c unlimited
+
+if [ -d "/home/noza/anaconda2"]; then
+  export PATH="/home/noza/anaconda2/bin:$PATH"
+fi
