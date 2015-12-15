@@ -689,4 +689,3 @@ c.NotebookApp.notebook_dir = u'/home/noza/work/sandbox/TwinPyNB'
 #
 #c.NotebookApp.server_extensions = [ 'nbextensions' ]
 #c.NotebookApp.extra_template_paths = [os.path.join(ipythondir,'templates') ]
-
