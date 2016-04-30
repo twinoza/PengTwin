@@ -175,3 +175,7 @@ ulimit -c unlimited
 if [ -d "/home/noza/anaconda2" ]; then
   export PATH="/home/noza/anaconda2/bin:$PATH"
 fi
+
+# CDB specific parameters
+export CDB="$HOME/work/Braindrop/CDB"
+source $CDB/SCRIPTS/setup.sh

@@ -12,6 +12,9 @@
     "postprocessor_class": "post_embedhtml.EmbedPostProcessor"
   },
   "NotebookApp": {
+    "extra_template_paths": [
+      "/home/noza/.local/share/jupyter/templates"
+    ],
     "server_extensions": [
       "nbextensions"
     ]

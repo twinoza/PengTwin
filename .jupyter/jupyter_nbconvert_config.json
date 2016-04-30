@@ -5,6 +5,7 @@
       "pre_pymarkdown.PyMarkdownPreprocessor"
     ],
     "template_path": [
+      ".",
       "/home/noza/.local/share/jupyter/templates"
     ]
   },
