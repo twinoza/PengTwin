@@ -153,7 +153,11 @@ fi
 
 if [ ${hostname}=='roulette' ]; then
     PATH="/opt/anaconda/bin:.:$PATH"
+    module load vim
 fi
+
+# Sets vi mode for bash prompt
+set -o vi
 
 # Use tmux for the terminal by default
 #alias tmux='tmux -2'
@@ -180,3 +184,4 @@ fi
 # CDB specific parameters
 export CDB="$HOME/work/Braindrop/CDB"
 source $CDB/SCRIPTS/setup.sh
+
