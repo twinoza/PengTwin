@@ -154,6 +154,12 @@ fi
 if [ ${hostname}=='roulette' ]; then
     PATH="/opt/anaconda/bin:.:$PATH"
     module load vim
+
+    # CDB specific parameters
+    export CDB="$HOME/work/Braindrop/CDB"
+    source $CDB/SCRIPTS/setup.sh
+
+    source /home/aneckar/brainstorm2/act/setup.bash
 fi
 
 # Sets vi mode for bash prompt
@@ -180,8 +186,4 @@ ulimit -c unlimited
 if [ -d "/home/noza/anaconda2" ]; then
   export PATH="/home/noza/anaconda2/bin:$PATH"
 fi
-
-# CDB specific parameters
-export CDB="$HOME/work/Braindrop/CDB"
-source $CDB/SCRIPTS/setup.sh
 
