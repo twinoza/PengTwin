@@ -147,11 +147,12 @@ if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
-if [ ${hostname}=='ng-hippocampus' ]; then
+if [ "${hostname}" = 'ng-hippocampus' ]; then
     PATH="$HOME/bin:.:$PATH"
 fi
 
-if [ ${hostname}=='roulette' ]; then
+if [ "${hostname}" = 'roulette' ]; then
+    echo "Setting up roulette configuration"
     PATH="/opt/anaconda/bin:.:$PATH"
     module load vim
 
@@ -187,3 +188,4 @@ if [ -d "/home/noza/anaconda2" ]; then
   export PATH="/home/noza/anaconda2/bin:$PATH"
 fi
 
+eval `dircolors /home/noza/.dir_colors/dircolors`
