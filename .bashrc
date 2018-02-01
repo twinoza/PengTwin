@@ -184,8 +184,15 @@ export GMOCK_DIR=/home/noza/Downloads/Software/gmock-1.6.0/
 # set ulimit for corefile size to unlimited by default
 ulimit -c unlimited
 
+
+# If anaconda is installed, add it to the path so that it becomes the default python interpreter
 if [ -d "/home/noza/anaconda2" ]; then
   export PATH="/home/noza/anaconda2/bin:$PATH"
 fi
 
+if [ -d "/home/noza/anaconda3" ]; then
+  export PATH="/home/noza/anaconda3/bin:$PATH"
+fi
+
 eval `dircolors /home/noza/.dir_colors/dircolors`
+
