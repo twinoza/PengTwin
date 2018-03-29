@@ -121,13 +121,6 @@ function! DiffToggle()
   endif
 :endfunction
 
-" Sets a bunch of python specific settings based on the vimrc script in the
-" ~/.vim/python path
-if !exists("autocommands_loaded")
-  let autocommands_loaded = 1
-  autocmd BufRead,BufNewFile,FileReadPost *.py source ~/.vim/python
-endif
-
 " Allow folding to be done automatically based on indent level
 "set foldmethod=indent
 "set nofoldenable
